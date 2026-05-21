@@ -17,7 +17,35 @@ Meanwhile I created a database in MySQL:
 
 <img width="639" height="262" alt="image" src="https://github.com/user-attachments/assets/8f1090b2-6c83-45e3-b8ac-a2686d17d73a" />
 
-I ran into an error downloading the data as the size of the value item code is 15 digits long. I discovered using the "DESCRIBE" SQL command that Excel labeled the value as and int whos largest value is 32bits. I converted the column into a BigInt:
+I ran into an error downloading the data as the size of the value item_code is 15 digits long. I discovered using the "DESCRIBE" SQL command that Excel labeled the value as and int whos largest value is 32bits. I converted the column into a BIGINT. I have to convert a column's data type in all four intput files which took a pretty long time as I had to rerun the program four times to make it happen. According to Gemini, typically numbers above 15 digits in Excel should be formatted as text to avoid truncation. In the future I could have converted the culumns as text in Excel and then converted them to BIGINT in MySQL.
 
 <img width="735" height="283" alt="image" src="https://github.com/user-attachments/assets/445f489b-b23f-439f-b020-c345cecc03bc" />
 
+Running the Python code csv_to_sql.py took under a minute.
+
+# Analyzing the Data
+
+Looking at the the data files, it is unclear what information they hold. I''l examine them one by one.
+
+# Annex1
+<img width="485" height="191" alt="image" src="https://github.com/user-attachments/assets/9e6c9a2c-422d-4e8f-93dd-2e8adbfa6b0c" />
+This file essetially catagorizes teh items.
+
+#Annex2
+<img width="753" height="227" alt="image" src="https://github.com/user-attachments/assets/66e38168-3f1f-4301-bd6e-e23ae300a1c7" />
+This file contains a timeline of the items sold.
+
+# Annex3
+<img width="345" height="259" alt="image" src="https://github.com/user-attachments/assets/4582c4f0-81b4-4d72-96ee-2da422a56ae5" />
+This file links items to price.
+
+# Annex4
+<img width="359" height="291" alt="image" src="https://github.com/user-attachments/assets/cef2522e-9451-412f-9679-5f20a8cd1bcf" />
+This file pairs an item to a loss rate.
+
+<img width="581" height="157" alt="image" src="https://github.com/user-attachments/assets/4e933483-be72-4995-9e88-95cdddabb44c" />
+
+For practice, I will now answer some common questions I might get about the data.
+
+First, let's count the number of items sold in 2021. I looked up all the instances of the year 2021 in the file and found the following result:
+<img width="449" height="291" alt="image" src="https://github.com/user-attachments/assets/35383173-5d7b-439a-8327-e6136ae14f97" />
