@@ -49,3 +49,10 @@ For practice, I will now answer some common questions I might get about the data
 
 First, let's count the number of items sold in 2021. I looked up all the instances of the year 2021 in the file and found the following result:
 <img width="449" height="291" alt="image" src="https://github.com/user-attachments/assets/35383173-5d7b-439a-8327-e6136ae14f97" />
+
+This is the answer to this question. I first ran into an issue with this question because apparently when you upload the same data into SQL it combines it to the data already there. Consequently, I had way too many data values. I had to delete the database and start again. Then I ran into a different issue where the value of Item_Code did not have enough significant digits because Excel was transforming it into a Scientific data type with three sig-figs. The way I overcame this issue is by creating a new column in the file called Item_Code_Text which added an apostophe to the beginning of each number so that Excel would automatically convert it into text. This solution worked.
+<img width="181" height="102" alt="image" src="https://github.com/user-attachments/assets/5b5950c8-816f-4246-9ebc-318532047f15" />
+
+There are 243 distinct items in the data:
+<img width="602" height="445" alt="image" src="https://github.com/user-attachments/assets/96f60ae3-9638-4e54-9a80-c29ad6c94563" />
+
