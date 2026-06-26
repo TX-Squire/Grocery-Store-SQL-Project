@@ -56,3 +56,13 @@ This is the answer to this question. I first ran into an issue with this questio
 There are 243 distinct items in the data:
 <img width="602" height="445" alt="image" src="https://github.com/user-attachments/assets/96f60ae3-9638-4e54-9a80-c29ad6c94563" />
 
+I contiuned to answer questions about the data. This included creating a bar graph to visulize results:
+<img width="1357" height="737" alt="image" src="https://github.com/user-attachments/assets/bc93b4d6-fd1f-4f61-9d00-f2ae46f9a0a7" />
+<img width="866" height="549" alt="image" src="https://github.com/user-attachments/assets/8a0685ca-8d17-45bc-88ff-3cc14b947a0f" />
+
+I utilized SQL join functions:
+<img width="1597" height="662" alt="image" src="https://github.com/user-attachments/assets/68fb43f7-f754-428d-82aa-24cfbf8cf536" />
+
+I even had a question which required two SQL queries to solve:
+<img width="1697" height="877" alt="image" src="https://github.com/user-attachments/assets/e6098cd1-b8aa-4597-ac09-08b9d04bfb85" />
+<img width="867" height="547" alt="image" src="https://github.com/user-attachments/assets/be2d6678-1f36-462c-9474-c9ae85b1f2b1" />
